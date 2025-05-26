@@ -15,6 +15,7 @@ terraform apply
 変数は以下のような形式で `terraform.tfvars` ファイルを作成します。  
 ※認証情報や秘密鍵パスなどは外部に公開しないよう注意してください。
 
+```hcl
 aws_access_key       = "YOUR_AWS_ACCESS_KEY"
 aws_secret_key       = "YOUR_AWS_SECRET_KEY"
 ami_id               = "ami-xxxxxxxxxxxxxxxxx"
@@ -23,6 +24,7 @@ instance_count       = 2
 instance_name_prefix = "MyEC2"
 key_name             = "your-key-name"
 public_key_path      = "/path/to/your/public/key.pub"
+```
 
 このファイルには認証情報を含めるため、.gitignore で除外しています。
 
