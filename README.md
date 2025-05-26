@@ -32,4 +32,3 @@ public_key_path      = "/path/to/your/public/key.pub"
 
 - terraform.tfvars は Git に登録されないようになっています。
 - AWS認証情報は漏れないように注意してください。
-- このプロジェクトは学習目的で作成されています。
